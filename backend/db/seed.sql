@@ -1,3 +1,5 @@
+\c songs_dev
+
 INSERT INTO songs (song_id, name, artist, album )
 VALUES
 ('1', 'The Four Seasons', 'Antonio Vivaldi', 'Classical Music 101', 500, false),
