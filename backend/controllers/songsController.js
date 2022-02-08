@@ -3,7 +3,6 @@ const songs = express.Router();
 const { response } = require("../app.js");
 const { getAllSongs, getSong } = require("../queries/songs.js")
 
-const songsController = require("./songsController.js");
 
 //To get all songs
 
