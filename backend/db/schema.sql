@@ -11,3 +11,7 @@ CREATE TABLE songs (
     time TEXT,
     is_favorite boolean
 );
+
+
+
+--psql -U postgres -f db/schema.sql

@@ -10,7 +10,7 @@ songs.get("/", async (request, response) => {
     try {
         const allSongs = await getAllSongs();
         if(allSongs[0]) {
-            response.status(400).json(allSongs);
+            response.status(200).json(allSongs);
         } else {
             response.status(450).json({ error: "server error"})
         }
