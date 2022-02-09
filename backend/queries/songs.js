@@ -12,7 +12,7 @@ const getAllSongs = async () => {
 const getSong = async (index) => {
     try {
         const oneSong = await db.one(
-            "SELCT * FROM songs WHERE id=$1",
+            "SELECT * FROM songs WHERE id=$1",
             index
         )
         return oneSong; 

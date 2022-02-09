@@ -19,7 +19,7 @@ songs.get("/", async (request, response) => {
     }
 })
 
-songs.get("/:id", async (request, response) => {
+songs.get("/:index", async (request, response) => {
     const { index } = request.params;
     try {
         const song = await getSong(index)
