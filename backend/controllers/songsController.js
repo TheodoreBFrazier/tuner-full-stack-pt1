@@ -19,11 +19,11 @@ songs.get("/", async (request, response) => {
     }
 })
 
-songs.get("/:index", async (request, response) => {
-    const { index } = request.params;
+songs.get("/:id", async (request, response) => {
+    const { id } = request.params;
     try {
-        const song = await getSong(index)
-        if (song.index) {
+        const song = await getSong(id)
+        if (song.id) {
             response.status(200).json(song)
         } else {
             response.status(400).json({erro: "Song is not found"})
