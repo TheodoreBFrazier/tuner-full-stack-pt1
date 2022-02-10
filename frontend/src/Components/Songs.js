@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useState, useState } from "react"
 import Song from "./Song"
 
 const API = process.env.REACT_APP_API_URL;
@@ -11,7 +10,7 @@ function Songs() {
     useEffect(() => {
         axios.get(API + "/songs")
             .then((response) => {
-                setSongs(reponse.data);
+                setSongs(response.data);
             }).catch((error) => {
                 console.log(error)
             })
@@ -39,3 +38,5 @@ function Songs() {
 
 
 }
+
+export default Songs;
