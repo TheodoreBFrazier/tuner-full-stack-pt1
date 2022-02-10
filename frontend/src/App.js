@@ -4,6 +4,7 @@ import './App.css';
 
 
 import Home from "./Pages/Home.js";
+import Index from "./Pages/Index.js"
 
 import NavBar from "./Components/NavBar";
 
@@ -15,6 +16,7 @@ function App() {
         <NavBar />
         <Routes>
        <Route path="/" element = {<Home />} />
+       <Route path = "/songs" element={<Index />} />
         </Routes>
     </Router>
     </div>
