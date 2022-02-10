@@ -14,4 +14,5 @@ CREATE TABLE songs (
 
 
 
+
 --psql -U postgres -f db/schema.sql
